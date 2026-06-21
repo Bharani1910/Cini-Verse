@@ -14,9 +14,9 @@ const Header: React.FC = () => {
   }, []);
 
   const navItems = [
-    { label: 'Home', target: 'root' },
-    { label: '✨ Discover Movies', target: 'preferences' },
-    { label: '🎬 Movie Vault', target: 'movie-vault' }
+    { label: 'Home', shortLabel: 'Home', target: 'root' },
+    { label: '✨ Discover Movies', shortLabel: 'Discover', target: 'preferences' },
+    { label: '🎬 Movie Vault', shortLabel: 'Vault', target: 'movie-vault' }
   ];
 
   const handleNavClick = (label: string, targetId: string) => {
@@ -65,7 +65,8 @@ const Header: React.FC = () => {
                       isActive ? 'text-white' : 'text-brand-muted hover:text-white'
                     }`}
                   >
-                    {item.label}
+                    <span className="hidden sm:inline">{item.label}</span>
+                    <span className="inline sm:hidden">{item.shortLabel}</span>
                   </button>
                   {/* Sliding active pill indicator */}
                   {isActive && (

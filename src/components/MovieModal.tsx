@@ -79,7 +79,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
           <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center space-y-8 relative z-30">
             {/* Title & Metadata */}
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading text-white tracking-tighter uppercase leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading text-white tracking-tighter uppercase leading-tight">
                 {movie.title}
               </h2>
               

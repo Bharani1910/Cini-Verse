@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
           
           {/* Main Title with Staggered Entrance and Text Shadow */}
           <h1 
-            className="text-6xl md:text-8xl lg:text-9xl font-black font-heading leading-[0.85] tracking-tighter text-white opacity-0 animate-slide-up"
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black font-heading leading-[0.85] tracking-tighter text-white opacity-0 animate-slide-up"
             style={{ 
               animationDelay: '150ms', 
               animationFillMode: 'forwards',
